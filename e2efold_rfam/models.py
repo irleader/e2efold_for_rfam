@@ -842,7 +842,7 @@ class Lag_PP_mixed_conserved(Lag_PP_zero):
                 torch.abs(a_hat_updated) - self.rho*self.alpha * torch.pow(self.lr_decay_alpha,t))
 
         a_hat_updated = torch.clamp(a_hat_updated, -1, 1)
-        a_updated = self.contact_a(a_hat_updated, m) #####3
+        a_updated = self.contact_a(a_hat_updated, m1) #####3
 
         lmbd_grad = F.relu(torch.sum(a_updated, dim=-1) - 1)
         lmbd_updated = lmbd + self.beta * torch.pow(self.lr_decay_beta,t) * lmbd_grad

@@ -140,8 +140,8 @@ else:
 #if LOAD_MODEL and os.path.isfile(e2e_model_path):
 #    print('Loading e2e model...')
 #    rna_ss_e2e.load_state_dict(torch.load(e2e_model_path,map_location=device))
-#print('Loading e2e model...')
-#rna_ss_e2e.load_state_dict(torch.load('../models_ckpt/e2e_att_simple_fix_mixed_s20_d10_Rfam_14.5_human_600_f1_position_matrix_False.pt',map_location=device))
+print('Loading e2e model...')
+rna_ss_e2e.load_state_dict(torch.load('../models_ckpt/e2e_att_simple_fix_mixed_s20_d10_Rfam_14.5_human_600_f1_position_matrix_False.pt',map_location=device))
 
 
 
