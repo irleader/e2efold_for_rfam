@@ -69,9 +69,9 @@ from e2efold_rfam.data_generator import RNASSDataGenerator, Dataset
 import collections
 #RNA_SS_data = collections.namedtuple('RNA_SS_data', 'seq ss_label length name pairs')
 
-train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_1')
-val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_1')
-test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_1')
+train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_2')
+val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_2')
+test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_2')
 
 
 
@@ -128,19 +128,20 @@ if LOAD_MODEL and os.path.isfile(model_path):
     print('Loading u net model...')
     contact_net.load_state_dict(torch.load(model_path,map_location=device))
 
-if LOAD_MODEL and os.path.isfile(pp_model_path):
-    print('Loading pp model...')
-    lag_pp_net.load_state_dict(torch.load(pp_model_path,map_location=device))
+#if LOAD_MODEL and os.path.isfile(pp_model_path):
+#    print('Loading pp model...')
+#    lag_pp_net.load_state_dict(torch.load(pp_model_path,map_location=device))
 
 if conserved:
     rna_ss_e2e = RNA_SS_e2e_conserved(contact_net, lag_pp_net)
 else:
     rna_ss_e2e = RNA_SS_e2e(contact_net, lag_pp_net)
 
-if LOAD_MODEL and os.path.isfile(e2e_model_path):
-    print('Loading e2e model...')
-    rna_ss_e2e.load_state_dict(torch.load(e2e_model_path,map_location=device))
-
+#if LOAD_MODEL and os.path.isfile(e2e_model_path):
+#    print('Loading e2e model...')
+#    rna_ss_e2e.load_state_dict(torch.load(e2e_model_path,map_location=device))
+#print('Loading e2e model...')
+#rna_ss_e2e.load_state_dict(torch.load('../models_ckpt/e2e_att_simple_fix_mixed_s20_d10_Rfam_14.5_human_600_f1_position_matrix_False.pt',map_location=device))
 
 
 

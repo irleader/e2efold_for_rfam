@@ -50,9 +50,9 @@ from e2efold_rfam.data_generator import RNASSDataGenerator, Dataset
 #import collections
 #RNA_SS_data = collections.namedtuple('RNA_SS_data', 'seq ss_label length name pairs')
 
-train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_2')
-val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_2')
-test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_2')
+train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_1')
+val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_1')
+test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_1')
 
 
 seq_len = train_data.data_y.shape[-2]
@@ -102,9 +102,9 @@ if model_type == 'conv2d_fc':
 
 # contact_net.conv1d2.register_forward_hook(get_activation('conv1d2'))
 
-if LOAD_MODEL and os.path.isfile(model_path):
-    print('Loading u net model...')
-    contact_net.load_state_dict(torch.load(model_path,map_location=device))
+#if LOAD_MODEL and os.path.isfile(model_path):
+#    print('Loading u net model...')
+#    contact_net.load_state_dict(torch.load(model_path,map_location=device))
 
 
 

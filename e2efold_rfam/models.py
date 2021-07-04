@@ -822,8 +822,9 @@ class Lag_PP_mixed_conserved(Lag_PP_zero):
         grad = a_hat * m1 * (grad_a + torch.transpose(grad_a, -1, -2))  #####2
 
         a_hat_updated = a_hat - self.alpha * torch.pow(self.lr_decay_alpha,t) * grad
-        # the rho needs to be further dealt
 
+        # the rho needs to be further dealt
+        # rho_mode=='matrix' is used
         if self.rho_mode=='nn':
             input_features = torch.cat([torch.unsqueeze(a_hat,-1),
                 torch.unsqueeze(grad,-1), torch.unsqueeze(u,-1)], -1).view(-1, 3)
@@ -864,7 +865,7 @@ class Lag_PP_mixed_conserved(Lag_PP_zero):
         m = au_ua + cg_gc + ug_gu
         mask = diags([1]*7, [-3, -2, -1, 0, 1, 2, 3],shape=(m.shape[-2], m.shape[-1])).toarray()
         m = m.masked_fill(torch.Tensor(mask).bool().to(self.device), 0)
-        #modified part 06/2021 jiajia
+        #added part 06/2021 jiajia
         r=conservation_batch
         m=torch.mul(r,m)
 
