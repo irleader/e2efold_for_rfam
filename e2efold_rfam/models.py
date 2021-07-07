@@ -850,6 +850,7 @@ class Lag_PP_mixed_conserved(Lag_PP_zero):
         return lmbd_updated, a_updated, a_hat_updated
 
     def constraint_matrix_conserved_batch(self,x,conservation_batch):
+
         base_a = x[:, :, 0]
         base_u = x[:, :, 1]
         base_c = x[:, :, 2]
@@ -868,7 +869,11 @@ class Lag_PP_mixed_conserved(Lag_PP_zero):
         #added part 06/2021 jiajia
         r=conservation_batch
         m=torch.mul(r,m)
-
+        '''
+        m=conservation_batch
+        mask = diags([1]*7, [-3, -2, -1, 0, 1, 2, 3],shape=(m.shape[-2], m.shape[-1])).toarray()
+        m = m.masked_fill(torch.Tensor(mask).bool().to(self.device), 0)
+        '''
         return m
 
 class Lag_PP_mixed(Lag_PP_zero):

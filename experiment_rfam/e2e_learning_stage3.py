@@ -69,9 +69,9 @@ from e2efold_rfam.data_generator import RNASSDataGenerator, Dataset
 import collections
 #RNA_SS_data = collections.namedtuple('RNA_SS_data', 'seq ss_label length name pairs')
 
-train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_2')
-val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_2')
-test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_2')
+train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_3')
+val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_3')
+test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_3')
 
 
 
@@ -140,8 +140,8 @@ else:
 #if LOAD_MODEL and os.path.isfile(e2e_model_path):
 #    print('Loading e2e model...')
 #    rna_ss_e2e.load_state_dict(torch.load(e2e_model_path,map_location=device))
-print('Loading e2e model...')
-rna_ss_e2e.load_state_dict(torch.load('../models_ckpt/e2e_att_simple_fix_mixed_s20_d10_Rfam_14.5_human_600_f1_position_matrix_False.pt',map_location=device))
+#print('Loading e2e model...')
+#rna_ss_e2e.load_state_dict(torch.load('../models_ckpt/e2e_att_simple_fix_mixed_s20_d10_Rfam_14.5_human_600_f1_position_matrix_False.pt',map_location=device))
 
 
 
