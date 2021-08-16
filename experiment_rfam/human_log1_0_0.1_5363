@@ -1,0 +1,126 @@
+#####Stage 1#####
+Here is the configuration of this run: 
+Munch({'exp_name': 'performance on short sequences', 'conserved': False, 'gpu': '0,1,2,3', 'u_net_d': 10, 'BATCH_SIZE': 8, 'batch_size_stage_1': 20, 'batch_size_stage_2': 16, 'OUT_STEP': 100, 'LOAD_MODEL': True, 'pp_steps': 20, 'pp_loss': 'f1', 'pp_model': 'mixed', 'rho_per_position': 'matrix', 'data_type': 'Rfam_14.5_human_600', 'model_type': 'att_simple_fix', 'epoches_first': 50, 'epoches_second': 10, 'epoches_third': 10, 'evaluate_epi': 1, 'evaluate_epi_stage_1': 5, 'step_gamma': 1, 'k': 1, 'test': Munch({'f1': True, 'accuracy': False, 'energy': False})})
+Max seq length  600
+Stage 1, epoch: 0,step: 0, loss: 0.7385638952255249
+Stage 1, epoch: 0,step: 100, loss: 0.7165043354034424
+Stage 1, epoch: 0,step: 200, loss: 0.7043371200561523
+Stage 1, epoch: 1,step: 300, loss: 0.6993987560272217
+Stage 1, epoch: 1,step: 400, loss: 0.695468008518219
+Stage 1, epoch: 2,step: 500, loss: 0.6864464282989502
+Stage 1, epoch: 2,step: 600, loss: 0.6932387948036194
+Stage 1, epoch: 3,step: 700, loss: 0.6829969882965088
+Stage 1, epoch: 3,step: 800, loss: 0.684228241443634
+Stage 1, epoch: 4,step: 900, loss: 0.6736887693405151
+Stage 1, epoch: 4,step: 1000, loss: 0.682898759841919
+Stage 1, epoch: 5,step: 1100, loss: 0.6792548298835754
+Stage 1, epoch: 5,step: 1200, loss: 0.6767181754112244
+Average val F1 score with pure post-processing:  0.1691391800442059
+Stage 1, epoch: 6,step: 1300, loss: 0.6923657655715942
+Stage 1, epoch: 6,step: 1400, loss: 0.6807159781455994
+Stage 1, epoch: 7,step: 1500, loss: 0.6775650978088379
+Stage 1, epoch: 7,step: 1600, loss: 0.6747382283210754
+Stage 1, epoch: 7,step: 1700, loss: 0.7027429342269897
+Stage 1, epoch: 8,step: 1800, loss: 0.685747504234314
+Stage 1, epoch: 8,step: 1900, loss: 0.6756540536880493
+Stage 1, epoch: 9,step: 2000, loss: 0.6726170778274536
+Stage 1, epoch: 9,step: 2100, loss: 0.6854003071784973
+Stage 1, epoch: 10,step: 2200, loss: 0.6890276670455933
+Stage 1, epoch: 10,step: 2300, loss: 0.6783846616744995
+Average val F1 score with pure post-processing:  0.23272427276799545
+Stage 1, epoch: 11,step: 2400, loss: 0.6770247220993042
+Stage 1, epoch: 11,step: 2500, loss: 0.6843084692955017
+Stage 1, epoch: 12,step: 2600, loss: 0.6814605593681335
+Stage 1, epoch: 12,step: 2700, loss: 0.6746693849563599
+Stage 1, epoch: 13,step: 2800, loss: 0.6818403005599976
+Stage 1, epoch: 13,step: 2900, loss: 0.6836488842964172
+Stage 1, epoch: 14,step: 3000, loss: 0.681573212146759
+Stage 1, epoch: 14,step: 3100, loss: 0.6737140417098999
+Stage 1, epoch: 14,step: 3200, loss: 0.6732499003410339
+Stage 1, epoch: 15,step: 3300, loss: 0.6863987445831299
+Stage 1, epoch: 15,step: 3400, loss: 0.6720359921455383
+Average val F1 score with pure post-processing:  0.3230988635417732
+Stage 1, epoch: 16,step: 3500, loss: 0.6765153408050537
+Stage 1, epoch: 16,step: 3600, loss: 0.6637234687805176
+Stage 1, epoch: 17,step: 3700, loss: 0.6726034283638
+Stage 1, epoch: 17,step: 3800, loss: 0.6674914360046387
+Stage 1, epoch: 18,step: 3900, loss: 0.6790227890014648
+Stage 1, epoch: 18,step: 4000, loss: 0.6715947985649109
+Stage 1, epoch: 19,step: 4100, loss: 0.6776358485221863
+Stage 1, epoch: 19,step: 4200, loss: 0.6788894534111023
+Stage 1, epoch: 20,step: 4300, loss: 0.6743975281715393
+Stage 1, epoch: 20,step: 4400, loss: 0.6715915203094482
+Average val F1 score with pure post-processing:  0.35970218354580086
+Stage 1, epoch: 21,step: 4500, loss: 0.6764129400253296
+Stage 1, epoch: 21,step: 4600, loss: 0.673757791519165
+Stage 1, epoch: 21,step: 4700, loss: 0.6712035536766052
+Stage 1, epoch: 22,step: 4800, loss: 0.680730938911438
+Stage 1, epoch: 22,step: 4900, loss: 0.6832095980644226
+Stage 1, epoch: 23,step: 5000, loss: 0.6741233468055725
+Stage 1, epoch: 23,step: 5100, loss: 0.6846296191215515
+Stage 1, epoch: 24,step: 5200, loss: 0.6697981953620911
+Stage 1, epoch: 24,step: 5300, loss: 0.6808992624282837
+Stage 1, epoch: 25,step: 5400, loss: 0.6707597374916077
+Stage 1, epoch: 25,step: 5500, loss: 0.6761547327041626
+Average val F1 score with pure post-processing:  0.39830802645965685
+Stage 1, epoch: 26,step: 5600, loss: 0.6788978576660156
+Stage 1, epoch: 26,step: 5700, loss: 0.6722441911697388
+Stage 1, epoch: 27,step: 5800, loss: 0.6799172163009644
+Stage 1, epoch: 27,step: 5900, loss: 0.6737750172615051
+Stage 1, epoch: 28,step: 6000, loss: 0.6629016995429993
+Stage 1, epoch: 28,step: 6100, loss: 0.6780738830566406
+Stage 1, epoch: 28,step: 6200, loss: 0.6707675457000732
+Stage 1, epoch: 29,step: 6300, loss: 0.6678821444511414
+Stage 1, epoch: 29,step: 6400, loss: 0.6579673290252686
+Stage 1, epoch: 30,step: 6500, loss: 0.6849962472915649
+Stage 1, epoch: 30,step: 6600, loss: 0.6738498210906982
+Average val F1 score with pure post-processing:  0.3802670078858233
+Stage 1, epoch: 31,step: 6700, loss: 0.6768254637718201
+Stage 1, epoch: 31,step: 6800, loss: 0.6785983443260193
+Stage 1, epoch: 32,step: 6900, loss: 0.6734625101089478
+Stage 1, epoch: 32,step: 7000, loss: 0.6738229393959045
+Stage 1, epoch: 33,step: 7100, loss: 0.6688660383224487
+Stage 1, epoch: 33,step: 7200, loss: 0.6696887612342834
+Stage 1, epoch: 34,step: 7300, loss: 0.6609586477279663
+Stage 1, epoch: 34,step: 7400, loss: 0.6775029301643372
+Stage 1, epoch: 35,step: 7500, loss: 0.662823498249054
+Stage 1, epoch: 35,step: 7600, loss: 0.6698418855667114
+Stage 1, epoch: 35,step: 7700, loss: 0.6716722249984741
+Average val F1 score with pure post-processing:  0.4642795572796567
+Stage 1, epoch: 36,step: 7800, loss: 0.6733164191246033
+Stage 1, epoch: 36,step: 7900, loss: 0.6600257158279419
+Stage 1, epoch: 37,step: 8000, loss: 0.674196183681488
+Stage 1, epoch: 37,step: 8100, loss: 0.6731486320495605
+Stage 1, epoch: 38,step: 8200, loss: 0.6751934885978699
+Stage 1, epoch: 38,step: 8300, loss: 0.6681719422340393
+Stage 1, epoch: 39,step: 8400, loss: 0.6813653111457825
+Stage 1, epoch: 39,step: 8500, loss: 0.6738207340240479
+Stage 1, epoch: 40,step: 8600, loss: 0.6740401387214661
+Stage 1, epoch: 40,step: 8700, loss: 0.6712101697921753
+Average val F1 score with pure post-processing:  0.45557564383302757
+Stage 1, epoch: 41,step: 8800, loss: 0.6727534532546997
+Stage 1, epoch: 41,step: 8900, loss: 0.6693757772445679
+Stage 1, epoch: 42,step: 9000, loss: 0.6721779108047485
+Stage 1, epoch: 42,step: 9100, loss: 0.6762965321540833
+Stage 1, epoch: 42,step: 9200, loss: 0.6635211110115051
+Stage 1, epoch: 43,step: 9300, loss: 0.6669666767120361
+Stage 1, epoch: 43,step: 9400, loss: 0.6482034921646118
+Stage 1, epoch: 44,step: 9500, loss: 0.6737364530563354
+Stage 1, epoch: 44,step: 9600, loss: 0.6753891706466675
+Stage 1, epoch: 45,step: 9700, loss: 0.6835398077964783
+Stage 1, epoch: 45,step: 9800, loss: 0.6804962754249573
+Average val F1 score with pure post-processing:  0.48646099213835614
+Stage 1, epoch: 46,step: 9900, loss: 0.67726069688797
+Stage 1, epoch: 46,step: 10000, loss: 0.6742761135101318
+Stage 1, epoch: 47,step: 10100, loss: 0.6670419573783875
+Stage 1, epoch: 47,step: 10200, loss: 0.6833161115646362
+Stage 1, epoch: 48,step: 10300, loss: 0.6708310842514038
+Stage 1, epoch: 48,step: 10400, loss: 0.6630470752716064
+Stage 1, epoch: 49,step: 10500, loss: 0.6646546721458435
+Stage 1, epoch: 49,step: 10600, loss: 0.6741333603858948
+Average testing F1 score with pure post-processing:  0.51043
+Average testing F1 score with pure post-processing allow shift:  0.59405553
+Average testing precision with pure post-processing:  0.57745314
+Average testing precision with pure post-processing allow shift:  0.68277013
+Average testing recall with pure post-processing:  0.48675948
+Average testing recall with pure post-processing allow shift:  0.56350696

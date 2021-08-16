@@ -50,9 +50,9 @@ from e2efold_rfam.data_generator import RNASSDataGenerator, Dataset
 #import collections
 #RNA_SS_data = collections.namedtuple('RNA_SS_data', 'seq ss_label length name pairs')
 
-train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_1')
-val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_1')
-test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_1')
+train_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'train_0_0.15_raw')
+val_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'val_0_0.15_raw')
+test_data = RNASSDataGenerator('../data/{}/'.format(data_type), 'test_0_0.15_raw')
 
 
 seq_len = train_data.data_y.shape[-2]

@@ -16,7 +16,7 @@
 	"model_type": "att_simple_fix",
 	"epoches_first": 50,
 	"epoches_second": 10,
-	"epoches_third": 20,
+	"epoches_third": 10,
 	"evaluate_epi": 1,
 	"evaluate_epi_stage_1": 5,
 	"step_gamma": 1,

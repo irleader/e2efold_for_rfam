@@ -1,0 +1,179 @@
+#####Stage 3#####
+Here is the configuration of this run: 
+Munch({'exp_name': 'performance on short sequences', 'conserved': True, 'gpu': '0,1,2,3', 'u_net_d': 10, 'BATCH_SIZE': 8, 'batch_size_stage_1': 20, 'batch_size_stage_2': 16, 'OUT_STEP': 100, 'LOAD_MODEL': True, 'pp_steps': 20, 'pp_loss': 'f1', 'pp_model': 'mixed', 'rho_per_position': 'matrix', 'data_type': 'Rfam_14.5_human_600', 'model_type': 'att_simple_fix', 'epoches_first': 50, 'epoches_second': 10, 'epoches_third': 10, 'evaluate_epi': 1, 'evaluate_epi_stage_1': 5, 'step_gamma': 1, 'k': 1, 'test': Munch({'f1': True, 'accuracy': False, 'energy': False})})
+Max seq length  600
+Loading u net model...
+Stage 3, epoch 0, step: 0, loss_u: 0.6625331044197083, loss_a: 0.7388291358947754, loss: 1.4013621807098389
+Average training F1 score:  0.40078189415431176
+Stage 3, epoch 0, step: 100, loss_u: 0.6682214736938477, loss_a: 0.7307955622673035, loss: 1.399017095565796
+Average training F1 score:  0.3754613618035537
+Stage 3, epoch 0, step: 200, loss_u: 0.6749624609947205, loss_a: 0.5631006360054016, loss: 1.238063097000122
+Average training F1 score:  0.5316687231987918
+Stage 3, epoch 0, step: 300, loss_u: 0.6464806199073792, loss_a: 0.6578117609024048, loss: 1.3042924404144287
+Average training F1 score:  0.4422568932127422
+Stage 3, epoch 0, step: 400, loss_u: 0.6764102578163147, loss_a: 0.6007538437843323, loss: 1.277164101600647
+Average training F1 score:  0.49365161694125803
+Stage 3, epoch 0, step: 500, loss_u: 0.6769523620605469, loss_a: 0.6329154372215271, loss: 1.3098678588867188
+Average training F1 score:  0.4326973467514169
+Average validation F1 score with learning post-processing:  0.48726234
+Average validation F1 score with learning post-processing allow shift:  0.5353792
+Average validation precision with learning post-processing:  0.3794826
+Average validation precision with learning post-processing allow shift:  0.41712558
+Average validation recall with learning post-processing:  0.7367755
+Average validation recall with learning post-processing allow shift:  0.8133692
+Stage 3, epoch 1, step: 600, loss_u: 0.6801573634147644, loss_a: 0.6665093302726746, loss: 1.346666693687439
+Average training F1 score:  0.43199070513500265
+Stage 3, epoch 1, step: 700, loss_u: 0.6735831499099731, loss_a: 0.7616881132125854, loss: 1.4352712631225586
+Average training F1 score:  0.32711420788948875
+Stage 3, epoch 1, step: 800, loss_u: 0.675818145275116, loss_a: 0.7032541036605835, loss: 1.3790721893310547
+Average training F1 score:  0.3419839119891973
+Stage 3, epoch 1, step: 900, loss_u: 0.6568000316619873, loss_a: 0.7217106223106384, loss: 1.3785107135772705
+Average training F1 score:  0.363556390905051
+Stage 3, epoch 1, step: 1000, loss_u: 0.6718133687973022, loss_a: 0.6655144095420837, loss: 1.3373277187347412
+Average training F1 score:  0.4208993715862419
+Average validation F1 score with learning post-processing:  0.53013605
+Average validation F1 score with learning post-processing allow shift:  0.57541084
+Average validation precision with learning post-processing:  0.4255712
+Average validation precision with learning post-processing allow shift:  0.46018156
+Average validation recall with learning post-processing:  0.7682225
+Average validation recall with learning post-processing allow shift:  0.842921
+Stage 3, epoch 2, step: 1100, loss_u: 0.6646210551261902, loss_a: 0.5503829121589661, loss: 1.2150039672851562
+Average training F1 score:  0.5532122745295908
+Stage 3, epoch 2, step: 1200, loss_u: 0.6650024652481079, loss_a: 0.5821711421012878, loss: 1.247173547744751
+Average training F1 score:  0.5207884592949418
+Stage 3, epoch 2, step: 1300, loss_u: 0.6738761067390442, loss_a: 0.6124060153961182, loss: 1.2862820625305176
+Average training F1 score:  0.5164856734082083
+Stage 3, epoch 2, step: 1400, loss_u: 0.6716156601905823, loss_a: 0.42608508467674255, loss: 1.0977007150650024
+Average training F1 score:  0.6832554187971129
+Stage 3, epoch 2, step: 1500, loss_u: 0.6663657426834106, loss_a: 0.5708031058311462, loss: 1.237168788909912
+Average training F1 score:  0.5312592001485474
+Stage 3, epoch 2, step: 1600, loss_u: 0.667892336845398, loss_a: 0.5848619341850281, loss: 1.2527542114257812
+Average training F1 score:  0.5182671133008693
+Average validation F1 score with learning post-processing:  0.55846465
+Average validation F1 score with learning post-processing allow shift:  0.60582584
+Average validation precision with learning post-processing:  0.46717042
+Average validation precision with learning post-processing allow shift:  0.50405633
+Average validation recall with learning post-processing:  0.76017827
+Average validation recall with learning post-processing allow shift:  0.83525634
+Stage 3, epoch 3, step: 1700, loss_u: 0.6515267491340637, loss_a: 0.557604968547821, loss: 1.2091317176818848
+Average training F1 score:  0.5625446795613546
+Stage 3, epoch 3, step: 1800, loss_u: 0.6426922678947449, loss_a: 0.6596275568008423, loss: 1.3023197650909424
+Average training F1 score:  0.43114659975575287
+Stage 3, epoch 3, step: 1900, loss_u: 0.6674548387527466, loss_a: 0.6254364848136902, loss: 1.292891263961792
+Average training F1 score:  0.4718685931424532
+Stage 3, epoch 3, step: 2000, loss_u: 0.6588476896286011, loss_a: 0.612396776676178, loss: 1.2712445259094238
+Average training F1 score:  0.4834197318143494
+Stage 3, epoch 3, step: 2100, loss_u: 0.6751805543899536, loss_a: 0.5102185606956482, loss: 1.185399055480957
+Average training F1 score:  0.6140064412289513
+Average validation F1 score with learning post-processing:  0.57851493
+Average validation F1 score with learning post-processing allow shift:  0.6226488
+Average validation precision with learning post-processing:  0.49282894
+Average validation precision with learning post-processing allow shift:  0.5273351
+Average validation recall with learning post-processing:  0.7706019
+Average validation recall with learning post-processing allow shift:  0.84103805
+Stage 3, epoch 4, step: 2200, loss_u: 0.6716856360435486, loss_a: 0.417741596698761, loss: 1.0894272327423096
+Average training F1 score:  0.6981552519686838
+Stage 3, epoch 4, step: 2300, loss_u: 0.6725154519081116, loss_a: 0.47679564356803894, loss: 1.1493110656738281
+Average training F1 score:  0.6510022669498623
+Stage 3, epoch 4, step: 2400, loss_u: 0.6659231185913086, loss_a: 0.5094887614250183, loss: 1.1754119396209717
+Average training F1 score:  0.5762220465554978
+Stage 3, epoch 4, step: 2500, loss_u: 0.6901054978370667, loss_a: 0.5667203068733215, loss: 1.2568258047103882
+Average training F1 score:  0.532980036923377
+Stage 3, epoch 4, step: 2600, loss_u: 0.6461089253425598, loss_a: 0.6047972440719604, loss: 1.250906229019165
+Average training F1 score:  0.5056410486649137
+Average validation F1 score with learning post-processing:  0.59139615
+Average validation F1 score with learning post-processing allow shift:  0.6358992
+Average validation precision with learning post-processing:  0.5140365
+Average validation precision with learning post-processing allow shift:  0.5491106
+Average validation recall with learning post-processing:  0.77109385
+Average validation recall with learning post-processing allow shift:  0.8420764
+Stage 3, epoch 5, step: 2700, loss_u: 0.666168749332428, loss_a: 0.5043596625328064, loss: 1.1705284118652344
+Average training F1 score:  0.5928901184840834
+Stage 3, epoch 5, step: 2800, loss_u: 0.679567277431488, loss_a: 0.5210127234458923, loss: 1.2005800008773804
+Average training F1 score:  0.5711609225554314
+Stage 3, epoch 5, step: 2900, loss_u: 0.6666507720947266, loss_a: 0.47493863105773926, loss: 1.1415894031524658
+Average training F1 score:  0.6246767930589588
+Stage 3, epoch 5, step: 3000, loss_u: 0.6552460789680481, loss_a: 0.5751257538795471, loss: 1.2303718328475952
+Average training F1 score:  0.5375211666993449
+Stage 3, epoch 5, step: 3100, loss_u: 0.6593091487884521, loss_a: 0.4327693581581116, loss: 1.092078447341919
+Average training F1 score:  0.6800338924185009
+Stage 3, epoch 5, step: 3200, loss_u: 0.6863849759101868, loss_a: 0.6355148553848267, loss: 1.3218998908996582
+Average training F1 score:  0.44275589608782506
+Average validation F1 score with learning post-processing:  0.60544926
+Average validation F1 score with learning post-processing allow shift:  0.64984196
+Average validation precision with learning post-processing:  0.5331392
+Average validation precision with learning post-processing allow shift:  0.56839174
+Average validation recall with learning post-processing:  0.77353966
+Average validation recall with learning post-processing allow shift:  0.84384066
+Stage 3, epoch 6, step: 3300, loss_u: 0.6768618822097778, loss_a: 0.5547849535942078, loss: 1.2316467761993408
+Average training F1 score:  0.574828052725302
+Stage 3, epoch 6, step: 3400, loss_u: 0.6795058250427246, loss_a: 0.5363876223564148, loss: 1.2158935070037842
+Average training F1 score:  0.5480541834158367
+Stage 3, epoch 6, step: 3500, loss_u: 0.6521406173706055, loss_a: 0.6373880505561829, loss: 1.2895286083221436
+Average training F1 score:  0.4662581620140557
+Stage 3, epoch 6, step: 3600, loss_u: 0.6906878352165222, loss_a: 0.6160499453544617, loss: 1.3067377805709839
+Average training F1 score:  0.4400417460310718
+Stage 3, epoch 6, step: 3700, loss_u: 0.6711966395378113, loss_a: 0.3604787588119507, loss: 1.0316753387451172
+Average training F1 score:  0.7549253238908411
+Average validation F1 score with learning post-processing:  0.6111799
+Average validation F1 score with learning post-processing allow shift:  0.6557317
+Average validation precision with learning post-processing:  0.5396252
+Average validation precision with learning post-processing allow shift:  0.57534254
+Average validation recall with learning post-processing:  0.77329606
+Average validation recall with learning post-processing allow shift:  0.8412802
+Stage 3, epoch 7, step: 3800, loss_u: 0.6733306646347046, loss_a: 0.49686262011528015, loss: 1.1701933145523071
+Average training F1 score:  0.6130677966596572
+Stage 3, epoch 7, step: 3900, loss_u: 0.6666389107704163, loss_a: 0.5547006726264954, loss: 1.2213395833969116
+Average training F1 score:  0.5556586949493418
+Stage 3, epoch 7, step: 4000, loss_u: 0.6750091910362244, loss_a: 0.47164496779441833, loss: 1.1466541290283203
+Average training F1 score:  0.6599319901885046
+Stage 3, epoch 7, step: 4100, loss_u: 0.6644065976142883, loss_a: 0.48296022415161133, loss: 1.1473667621612549
+Average training F1 score:  0.6187772212571998
+Stage 3, epoch 7, step: 4200, loss_u: 0.6797599196434021, loss_a: 0.5665373802185059, loss: 1.2462973594665527
+Average training F1 score:  0.5555624667325856
+Average validation F1 score with learning post-processing:  0.61954254
+Average validation F1 score with learning post-processing allow shift:  0.6630826
+Average validation precision with learning post-processing:  0.5540242
+Average validation precision with learning post-processing allow shift:  0.58879155
+Average validation recall with learning post-processing:  0.7742296
+Average validation recall with learning post-processing allow shift:  0.84287703
+Stage 3, epoch 8, step: 4300, loss_u: 0.6709112524986267, loss_a: 0.5352745056152344, loss: 1.2061858177185059
+Average training F1 score:  0.5552824154001156
+Stage 3, epoch 8, step: 4400, loss_u: 0.6834752559661865, loss_a: 0.5233033299446106, loss: 1.2067785263061523
+Average training F1 score:  0.6036396291386914
+Stage 3, epoch 8, step: 4500, loss_u: 0.6700195670127869, loss_a: 0.5726458430290222, loss: 1.242665410041809
+Average training F1 score:  0.5209592473465658
+Stage 3, epoch 8, step: 4600, loss_u: 0.6724644899368286, loss_a: 0.5992637276649475, loss: 1.271728277206421
+Average training F1 score:  0.5099832582490443
+Stage 3, epoch 8, step: 4700, loss_u: 0.6364532113075256, loss_a: 0.4141941964626312, loss: 1.0506473779678345
+Average training F1 score:  0.7073445836946418
+Stage 3, epoch 8, step: 4800, loss_u: 0.6719138026237488, loss_a: 0.46277666091918945, loss: 1.134690523147583
+Average training F1 score:  0.6711338183455
+Average validation F1 score with learning post-processing:  0.62415075
+Average validation F1 score with learning post-processing allow shift:  0.6670373
+Average validation precision with learning post-processing:  0.56043667
+Average validation precision with learning post-processing allow shift:  0.5948622
+Average validation recall with learning post-processing:  0.77605414
+Average validation recall with learning post-processing allow shift:  0.84259146
+Stage 3, epoch 9, step: 4900, loss_u: 0.6704696416854858, loss_a: 0.355273962020874, loss: 1.0257436037063599
+Average training F1 score:  0.7558539217014449
+Stage 3, epoch 9, step: 5000, loss_u: 0.6643258333206177, loss_a: 0.6278600692749023, loss: 1.29218590259552
+Average training F1 score:  0.48875115186339857
+Stage 3, epoch 9, step: 5100, loss_u: 0.6836222410202026, loss_a: 0.5280614495277405, loss: 1.211683750152588
+Average training F1 score:  0.544335308614621
+Stage 3, epoch 9, step: 5200, loss_u: 0.6770908832550049, loss_a: 0.6178478002548218, loss: 1.2949386835098267
+Average training F1 score:  0.48189925304868586
+Stage 3, epoch 9, step: 5300, loss_u: 0.6705472469329834, loss_a: 0.4847382605075836, loss: 1.1552854776382446
+Average training F1 score:  0.5896989027070441
+Average validation F1 score with learning post-processing:  0.6339403
+Average validation F1 score with learning post-processing allow shift:  0.6791079
+Average validation precision with learning post-processing:  0.5794945
+Average validation precision with learning post-processing allow shift:  0.6167923
+Average validation recall with learning post-processing:  0.7580555
+Average validation recall with learning post-processing allow shift:  0.82379127
+Average testing F1 score with learning post-processing:  0.6504259
+Average testing F1 score with learning post-processing allow shift:  0.6949914
+Average testing precision with learning post-processing:  0.60543215
+Average testing precision with learning post-processing allow shift:  0.64312553
+Average testing recall with learning post-processing:  0.7521436
+Average testing recall with learning post-processing allow shift:  0.8150078
